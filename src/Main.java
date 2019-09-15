@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
 
 public class Main {
@@ -21,9 +23,17 @@ public class Main {
         }
 
         // iterate via "New way to loop"
-        for (Object item : grades) {
+        for (Object item :  grades) {
             System.out.println(item);
         }
+
+        Queue orders = new LinkedList();
+        orders.add("Order1");
+        orders.add("Order2");
+        orders.add("Order3");
+        System.out.print(orders.poll());
+        System.out.print(orders.poll());
+        System.out.print(orders.poll());
 
     }
 
